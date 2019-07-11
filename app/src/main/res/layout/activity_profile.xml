@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".features.profile.ProfileActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+    <androidx.core.widget.NestedScrollView
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_16">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:showIn="@layout/activity_profile"
+                tools:context=".features.profile.ProfileActivity">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/my_pic"
+                    android:layout_marginTop="76dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/margin_8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="@dimen/margin_8" app:layout_constraintHorizontal_bias="0.498"
+                    android:contentDescription="@string/personal_image_of_omneya"/>
+            <TextView
+                    android:id="@+id/name_tv"
+                    android:text="@string/omneya_osman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="249dp"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:fontFamily="@font/montserrat_semibold"/>
+
+            <View
+                    android:id="@+id/under_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorAccent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/name_tv"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_8"/>
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/tack_tv"
+                      android:text="@string/track_android"
+                      android:layout_marginTop="@dimen/margin_16"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/under_line"
+                      app:layout_constraintStart_toStartOf="@id/guideline"
+                      android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            />
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/country_tv"
+                      android:text="@string/country_egypt"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/tack_tv"
+                      android:layout_marginTop="@dimen/margin_16"
+                      app:layout_constraintStart_toStartOf="@id/guideline"
+                      android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            />
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/email_tv"
+                      android:text="@string/my_email"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/country_tv"
+                      android:layout_marginTop="@dimen/margin_16"
+                      app:layout_constraintStart_toStartOf="@id/guideline"
+                      android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            />
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/phone_tv"
+                      android:text="@string/phone_201212990036"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/email_tv"
+                      android:layout_marginTop="@dimen/margin_16"
+                      app:layout_constraintStart_toStartOf="@id/guideline"
+                      android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            />
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/slack_name_tv"
+                      android:text="@string/slack_username_engomneya_osman"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/phone_tv"
+                      android:layout_marginTop="@dimen/margin_16"
+                      app:layout_constraintStart_toStartOf="@id/guideline"
+                      android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            />
+            <androidx.constraintlayout.widget.Guideline
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/guideline"
+                    app:layout_constraintGuide_begin="20dp"
+                    android:orientation="vertical"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

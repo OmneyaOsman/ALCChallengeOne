@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ALC 4 phase 1</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">About ALC</string>
+    <string name="title_activity_profile">my profile</string>
+    <string name="welcome_to_alc_4_0">Welcome to ALC 4.0</string>
+    <string name="about_alc">about alc</string>
+    <string name="my_profile">My Profile</string>
+    <string name="personal_image_of_omneya">personal image of omneya</string>
+    <string name="omneya_osman">Omneya Osman</string>
+    <string name="track_android">Track:  Android</string>
+    <string name="country_egypt">Country: Egypt</string>
+    <string name="my_email">Email: engomneya.osman@gmail.com</string>
+    <string name="phone_201212990036">Phone number: +201212990036</string>
+    <string name="slack_username_engomneya_osman">Slack Username: @engomneya.osman</string>
+</resources>
